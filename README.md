@@ -1,6 +1,6 @@
-# 📚 AI & ML concepts, terms and abbreviations
+# 📚 AI & ML Concepts, Terms, and Abbreviations
 
-This glossary provides a comprehensive list of key terms, abbreviations, and tools commonly used in Artificial Intelligence (AI), Machine Learning (ML), and Large Language Models (LLMs). It's a helpful reference for both beginners and experienced practitioners navigating the AI landscape.
+This glossary provides a comprehensive list of terms, abbreviations, and tools used in Artificial Intelligence (AI), Machine Learning (ML), and Large Language Models (LLMs).
 
 ---
 
@@ -8,38 +8,39 @@ This glossary provides a comprehensive list of key terms, abbreviations, and too
 
 | Abbreviation | Term                         | Description                                                                 |
 |--------------|------------------------------|-----------------------------------------------------------------------------|
-| AI           | Artificial Intelligence       | The broad field of creating intelligent machines.                           |
-| ML           | Machine Learning              | A subfield of AI focused on algorithms that learn from data.               |
-| DL           | Deep Learning                 | A subset of ML using neural networks with multiple layers.                 |
-| NLP          | Natural Language Processing   | AI dealing with human language understanding and generation.              |
-| CV           | Computer Vision               | AI that interprets visual information from images/videos.                 |
-| RL           | Reinforcement Learning        | ML where agents learn by trial and error with rewards/punishments.       |
-| GAN          | Generative Adversarial Network| Competing neural nets generating realistic data.                          |
-| RNN          | Recurrent Neural Network      | Neural net for sequential data like text or time series.                  |
-| CNN          | Convolutional Neural Network  | Neural network used primarily in image recognition.                       |
-| LSTM         | Long Short-Term Memory        | A type of RNN designed to remember long-term dependencies.                |
-| GNN          | Graph Neural Network          | Processes graph-structured data.                                          |
-| VAE          | Variational Autoencoder       | Type of generative model that learns latent representations.             |
+| AI           | Artificial Intelligence       | Creating systems that simulate human intelligence.                          |
+| ML           | Machine Learning              | Algorithms that learn from data without explicit programming.               |
+| DL           | Deep Learning                 | ML using deep neural networks.                                              |
+| NN           | Neural Network                | Inspired by the brain, used for pattern recognition in ML/DL.               |
+| DNN          | Deep Neural Network           | NN with multiple hidden layers.                                             |
+| CNN          | Convolutional Neural Network  | Specialized DNN for image and grid data.                                    |
+| RNN          | Recurrent Neural Network      | NN for sequential data like time series and text.                           |
+| LSTM         | Long Short-Term Memory        | RNN variant that captures long-term dependencies.                           |
+| GRU          | Gated Recurrent Unit          | Lightweight LSTM alternative for sequences.                                 |
+| GAN          | Generative Adversarial Network| Competing models generate realistic data.                                   |
+| VAE          | Variational Autoencoder       | Learns latent representations for generative tasks.                         |
+| RL           | Reinforcement Learning        | Learning via rewards from environment interaction.                          |
+| DRL          | Deep Reinforcement Learning   | Combines RL and deep learning.                                              |
 
 ---
 
-## 🧠 Large Language Models (LLMs)
+## 🧠 Large Language Models (LLMs) & NLP
 
 | Abbreviation | Term                           | Description                                                                 |
 |--------------|--------------------------------|-----------------------------------------------------------------------------|
-| LLM          | Large Language Model           | AI trained on vast text to generate and understand natural language.       |
-| SFT          | Supervised Fine-Tuning         | Training a pre-trained LLM further with labeled data.                      |
-| RLHF         | Reinforcement Learning from Human Feedback | Aligns LLM behavior using human feedback.                          |
-| LoRA         | Low-Rank Adaptation            | Efficient fine-tuning with reduced trainable parameters.                   |
-| MoE          | Mixture of Experts             | Model architecture with specialized expert modules.                        |
-| PEFT         | Parameter-Efficient Fine-Tuning| Efficient fine-tuning method like LoRA.                                    |
-| IFT          | Instruction Fine-Tuning        | Training LLMs to better follow instructions.                               |
-| ST           | Sentence Transformer           | Models that encode text into embeddings for similarity tasks.              |
-| LM           | Language Model                 | General category including LLMs and smaller models.                        |
-| AGI          | Artificial General Intelligence| Hypothetical AI matching human intelligence in any task.                   |
-| TTS          | Text-to-Speech                 | Converts text into spoken audio.                                           |
-| STT          | Speech-to-Text                 | Converts spoken audio into text.                                           |
-| OCR          | Optical Character Recognition  | Extracts text from images or scanned documents.                            |
+| LLM          | Large Language Model           | Trained on vast text to understand/generate language.                      |
+| NLP          | Natural Language Processing    | Enables computers to understand human language.                            |
+| NLU          | Natural Language Understanding | Focuses on extracting meaning from text.                                   |
+| NLG          | Natural Language Generation    | Generates coherent and relevant text.                                      |
+| BERT         | Bidirectional Encoder Representations from Transformers | Contextual embeddings from both directions.    |
+| RoBERTa      | Robustly Optimized BERT Approach| Improved BERT with better training.                                       |
+| GPT          | Generative Pre-trained Transformer | Transformer model trained for language generation.                     |
+| T5           | Text-to-Text Transfer Transformer | Reframes tasks as text-to-text.                                       |
+| XLNet        | —                              | Combines benefits of BERT and autoregressive models.                      |
+| Transformer  | —                              | NN using self-attention, basis for modern LLMs.                           |
+| Attention    | —                              | Mechanism to focus on important parts of input.                           |
+| Tokenizer    | —                              | Splits text into smaller processing units.                                |
+| ST           | Sentence Transformer           | Maps sentences into dense embeddings.                                     |
 
 ---
 
@@ -47,12 +48,14 @@ This glossary provides a comprehensive list of key terms, abbreviations, and too
 
 | Abbreviation | Term                  | Description                                                                 |
 |--------------|-----------------------|-----------------------------------------------------------------------------|
-| GGUF         | GGUF Format           | Efficient binary format for LLM inference (used with GGML).                |
-| GGML         | GPT-GGML Library      | C++/C-based framework for quantized LLMs.                                  |
-| FP16         | 16-bit Floating Point | Reduced precision format for performance.                                  |
-| INT8         | 8-bit Integer         | Lower precision weights for faster inference and less memory.             |
-| Q4_K_M       | Quantized 4-bit (KMeans)| Specific 4-bit quantization format used in GGUF.                          |
-| ONNX         | Open Neural Network Exchange | Interoperable format across ML frameworks.                          |
+| GGUF         | GGUF Format           | Compact format for quantized models.                                        |
+| GGML         | GPT-GGML Library      | C/C++ backend for efficient inference.                                      |
+| FP16         | 16-bit Floating Point | Half-precision to reduce memory and speed up compute.                       |
+| INT8         | 8-bit Integer         | Used in quantization to reduce model size.                                 |
+| Q4_K_M       | Quantized 4-bit (KMeans)| Compact format for model inference.                                       |
+| ONNX         | Open Neural Network Exchange | Cross-platform model format.                                        |
+| TensorRT     | —                     | NVIDIA's high-performance inference engine.                                |
+| TFLite       | TensorFlow Lite       | Lightweight inference framework for mobile/edge.                           |
 | TF           | TensorFlow            | Google’s deep learning framework.                                          |
 | PT           | PyTorch               | Meta’s (Facebook) widely used ML library.                                  |
 | HF           | Hugging Face          | Platform and tools for ML model sharing and deployment.                    |
@@ -63,17 +66,24 @@ This glossary provides a comprehensive list of key terms, abbreviations, and too
 
 | Term            | Description                                                                 |
 |-----------------|-----------------------------------------------------------------------------|
-| Fine-tune       | Adapting a pre-trained model to a specific task or domain.                 |
-| Pre-train       | Training a model on general data before specific task fine-tuning.         |
-| Epoch           | One complete pass through the training dataset.                            |
-| Batch Size      | Number of samples used in one training step.                               |
-| Loss            | Indicator of how well the model's predictions match the true values.       |
-| Optimizer       | Algorithm (e.g., SGD, Adam) that updates model weights during training.    |
-| Learning Rate   | Controls the step size for weight updates.                                 |
-| Overfitting     | When the model memorizes rather than generalizes.                          |
-| Underfitting    | When the model fails to learn the patterns in the training data.           |
-| Validation Set  | Data used to monitor performance during training.                          |
-| Test Set        | Final data used to evaluate model after training.                          |
+| Pre-train       | Initial training on broad data.                                             |
+| Fine-tune       | Additional training on task-specific data.                                 |
+| Epoch           | One pass through the entire dataset.                                       |
+| Batch / Batch Size| Subset of data for a training iteration.                                |
+| Loss            | Measures error between prediction and truth.                               |
+| Optimizer       | Updates weights to minimize loss (e.g., SGD, Adam).                        |
+| SGD             | Stochastic Gradient Descent – optimization method.                         |
+| Adam            | Optimizer combining momentum and adaptive LR.                              |
+| Learning Rate   | Size of weight updates during training.                                    |
+| Backpropagation | Algorithm to update weights via gradients.                                 |
+| Overfitting     | Model memorizes training data, poor generalization.                        |
+| Underfitting    | Model fails to capture patterns in data.                                   |
+| Regularization  | Prevents overfitting by adding constraints.                                |
+| Hyperparameter  | Configurations like learning rate or batch size.                           |
+| Gradient Clipping| Caps gradients to prevent explosion.                                     |
+| Feature Engineering| Designing inputs to improve performance.                              |
+| Transfer Learning| Using pre-trained models on new tasks.                                   |
+| Embedding       | Vector representation of words, sentences, or images.                      |
 
 ---
 
@@ -81,15 +91,21 @@ This glossary provides a comprehensive list of key terms, abbreviations, and too
 
 | Term         | Description                                                               |
 |--------------|---------------------------------------------------------------------------|
-| LangChain    | Framework for building LLM-powered applications.                          |
 | Transformers | Hugging Face library of pre-trained models.                              |
-| llama.cpp    | C/C++ implementation of LLMs for local inference.                        |
-| Ollama       | Tool for running LLMs locally, optimized for Mac.                         |
-| vLLM         | High-throughput LLM inference engine.                                    |
-| DeepSpeed    | Microsoft library for optimizing training/inference of large models.      |
-| HF Hub       | Centralized hub to publish and access ML models.                         |
-| FastAPI      | High-performance API framework, often used with AI services.             |
-| Streamlit    | Tool for creating interactive ML web apps with Python.                   |
+| LangChain    | Toolkit for building LLM-based applications.                              |
+| llama.cpp    | C/C++ LLM inference engine.                                               |
+| Ollama       | Mac-native LLM runner.                                                    |
+| vLLM         | High-throughput transformer inference.                                    |
+| DeepSpeed    | Optimized training/inference library from Microsoft.                      |
+| HF Hub       | Hugging Face’s model and dataset hub.                                     |
+| TensorFlow   | Google's ML framework.                                                    |
+| PyTorch      | Meta’s dynamic ML framework.                                              |
+| Keras        | High-level NN API built on TensorFlow.                                    |
+| FastAPI      | API backend for ML apps.                                                  |
+| Streamlit    | Web app builder for ML in Python.                                         |
+| Scikit-learn | Classical ML algorithms and tools.                                        |
+| NumPy        | Numerical computation in Python.                                          |
+| SciPy        | Scientific computing in Python.                                           |
 
 ---
 
@@ -97,14 +113,16 @@ This glossary provides a comprehensive list of key terms, abbreviations, and too
 
 | Abbreviation | Term                     | Description                                                               |
 |--------------|--------------------------|---------------------------------------------------------------------------|
-| API          | Application Programming Interface | Way for programs to interact with ML services.                   |
-| REST API     | Representational State Transfer | Standard architecture for web-based APIs.                      |
-| gRPC         | gRPC Remote Procedure Call | High-performance method for client-server communication.         |
-| GPU          | Graphics Processing Unit  | Hardware accelerator used in AI computation.                            |
-| TPU          | Tensor Processing Unit    | Google’s custom hardware for ML workloads.                              |
-| Docker       | Docker                    | Containerization platform for packaging AI applications.                |
-| K8s          | Kubernetes                | Orchestration tool for managing Docker containers.                      |
-| MLOps        | Machine Learning Operations| Practices to deploy, monitor, and manage ML systems in production.      |
+| API          | Application Programming Interface | Interface to connect apps/services.                             |
+| REST API     | Representational State Transfer | Standard web API architecture.                               |
+| gRPC         | gRPC Remote Procedure Call | Efficient communication protocol.                               |
+| GPU          | Graphics Processing Unit  | Hardware for fast parallel computation.                                |
+| TPU          | Tensor Processing Unit    | Google’s AI-specific accelerator.                                       |
+| Docker       | —                         | Container platform for deploying applications.                          |
+| K8s          | Kubernetes                | Orchestrates containers (e.g., Docker).                                 |
+| MLOps        | Machine Learning Operations| Tools/practices for ML lifecycle in production.                         |
+| Inference    | —                         | Using a trained model to make predictions.                              |
+| Deployment   | —                         | Making a model available in production.                                 |
 
 ---
 
@@ -112,32 +130,34 @@ This glossary provides a comprehensive list of key terms, abbreviations, and too
 
 | Abbreviation | Term                          | Description                                                                |
 |--------------|-------------------------------|----------------------------------------------------------------------------|
-| BLEU         | Bilingual Evaluation Understudy| Measures accuracy of machine-translated text.                              |
-| ROUGE        | Recall-Oriented Understudy for Gisting Evaluation | Compares overlap of generated vs. reference summaries.        |
-| METEOR       | Metric for Evaluation of Translation with Explicit ORdering | Evaluates machine translation with synonyms and order.   |
-| Perplexity   | —                             | Measures how well a language model predicts text. Lower is better.        |
-| Accuracy     | —                             | Proportion of correct predictions.                                        |
-| F1 Score     | —                             | Harmonic mean of precision and recall. Used in classification tasks.      |
+| Accuracy     | —                              | Proportion of correct predictions.                                        |
+| Precision    | —                              | True positives / predicted positives.                                     |
+| Recall       | —                              | True positives / actual positives.                                        |
+| F1 Score     | —                              | Harmonic mean of precision and recall.                                    |
+| BLEU         | Bilingual Evaluation Understudy| Compares generated vs. reference translations.                            |
+| ROUGE        | Recall-Oriented Understudy for Gisting Evaluation | Overlap in summarization tasks.         |
+| METEOR       | Metric for Evaluation of Translation with Explicit ORdering | Translation evaluation metric.      |
+| Perplexity   | —                              | How well a model predicts text (lower = better).                          |
 
 ---
 
-## 🧩 AI Teams & Organizations
+## 🧩 AI Organizations & Contributors
 
 | Organization             | Focus                                                                |
 |--------------------------|----------------------------------------------------------------------|
-| OpenAI                   | LLMs (ChatGPT), AGI research.                                        |
-| Anthropic                | Claude models, alignment-focused AI.                                |
-| Google DeepMind          | AlphaGo, AGI research, robotics, RL.                                 |
-| Meta AI (FAIR)           | LLaMA models, open-source NLP and vision research.                   |
-| Microsoft Research       | Azure AI, partnerships with OpenAI, responsible AI.                  |
-| HuggingFace              | Model sharing, Transformers library.                                 |
-| EleutherAI               | GPT-Neo, GPT-J open-source LLMs.                                     |
-| Stability AI             | Creator of Stable Diffusion and other generative models.             |
-| Together AI              | Open models and decentralized AI compute.                            |
-| Llama.cpp                | Efficient CPU-based LLM inference.                                   |
-| Ollama                   | Local LLM runner, optimized for Apple Silicon.                       |
-| Mistral AI               | High-performance open LLMs (e.g., Mistral 7B).                        |
-| xAI                     | Elon Musk’s AGI research initiative.                                 |
-| Baidu ERNIE Bot          | LLMs in the Chinese language space.                                  |
-| Alibaba Cloud (Qwen)     | Qwen LLM series for general AI use.                                  |
-| Tencent HunYuan          | General-purpose AI and LLMs.                                         |
+| OpenAI                   | ChatGPT, AGI research.                                                |
+| Anthropic                | Claude models, AI alignment.                                         |
+| Google DeepMind          | RL, robotics, AGI.                                                    |
+| Meta AI (FAIR)           | LLaMA models, open-source AI.                                        |
+| Microsoft Research       | Azure AI, responsible AI, OpenAI partnership.                        |
+| HuggingFace              | Transformers, model sharing.                                         |
+| EleutherAI               | Open-source LLMs (GPT-J, GPT-Neo).                                   |
+| Stability AI             | Generative AI (e.g., Stable Diffusion).                             |
+| Together AI              | Open model hosting and training.                                     |
+| Llama.cpp                | Lightweight CPU-based inference.                                     |
+| Ollama                   | Local LLMs on Apple Silicon.                                         |
+| Mistral AI               | High-performance open models (e.g., Mistral 7B).                     |
+| xAI                      | Elon Musk’s AI company focused on AGI.                              |
+| Baidu ERNIE Bot          | Chinese language LLMs.                                               |
+| Alibaba Cloud (Qwen)     | Chinese LLMs for general use.                                        |
+| Tencent HunYuan          | Multilingual LLM and general AI.                                     |
